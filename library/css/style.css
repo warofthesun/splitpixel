@@ -1506,6 +1506,8 @@ body {
   padding: 0 1.5em; }
   .about .location__logo img {
     width: 50%; }
+  .about .emma img {
+    margin-left: -30px; }
   .about .location__content {
     padding: 0 3em; }
   .about .location__responsibilities {

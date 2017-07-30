@@ -35,7 +35,7 @@
 											</div>
 										</div>
 										<div class="d-1of2 t-1of2 m-all">
-											<div class="location__logo"><img src="<?php echo get_template_directory_uri(); ?>/library/images/emma_logo.png"></div>
+											<div class="location__logo emma"><img src="<?php echo get_template_directory_uri(); ?>/library/images/emma_logo.png"></div>
 											<div class="location__content">
 												<div class="location__description"><?php the_field('location_two_description'); ?></div>
 												<div class="location__responsibilities"><?php the_field('location_two_responsibilities'); ?></div>
