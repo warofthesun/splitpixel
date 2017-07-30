@@ -1412,6 +1412,9 @@ GENERAL STYLES
     font-family: "Montserrat", Helvetica, Arial, sans-serif; }
   .-skin-default .-filters a.-filer:hover {
     color: #a33f0a !important; }
+.-skin-default .-item .title {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #d1d3d4; }
 
 .text-slideshow {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;

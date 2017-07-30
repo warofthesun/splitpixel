@@ -54,7 +54,16 @@ GENERAL STYLES
 			
 		}
 	}
+
+	.-item {
+		.title {
+			font-family: $sans-serif;
+			color: $border;
+		}
+	}
 }
+
+
 
 .text-slideshow {
 	font-family: $sans-serif;
