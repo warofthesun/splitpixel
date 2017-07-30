@@ -13,7 +13,7 @@
                  * folder and replace the function below with the contents of the "format.php" file.
                 */
               ?>
-              
+
               <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
               <div class="d-1of2 m-all format-image"><?php the_post_thumbnail( 'archive-600' ); ?></div>
               <div class="d-1of2 m-all">
@@ -21,7 +21,7 @@
 
                   <h1 class="entry-title single-title" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>
 
-                  
+
 
                 </header> <?php // end article header ?>
 
@@ -55,7 +55,7 @@
 
                   <?php printf( __( 'See all', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
 
-                  <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+                  <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Related to:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 
                 </footer> <?php // end article footer ?>
 
