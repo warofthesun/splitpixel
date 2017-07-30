@@ -75,6 +75,8 @@ if ( ! isset( $content_width ) ) {
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'archive-600', 600, 600, true );
+add_image_size( 'archive-300', 300, 300, true );
 
 /*
 to add more sizes, simply copy a line from above
@@ -189,6 +191,28 @@ function bones_register_sidebars() {
 
 	*/
 } // don't remove this bracket!
+
+//remove "Category" from Archive title
+
+add_filter( 'get_the_archive_title', function ($title) {
+
+    if ( is_category() ) {
+
+            $title = single_cat_title( '', false );
+
+        } elseif ( is_tag() ) {
+
+            $title = single_tag_title( '', false );
+
+        } elseif ( is_author() ) {
+
+            $title = '<span class="vcard">' . get_the_author() . '</span>' ;
+
+        }
+
+    return $title;
+
+});
 
 
 /************* COMMENT LAYOUT *********************/
