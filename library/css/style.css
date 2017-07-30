@@ -1403,6 +1403,8 @@ GENERAL STYLES
     margin-top: -4px !important;
     background-color: #fff !important;
     padding: 5px 15px !important; }
+    .-skin-default .-filters .-filter:active {
+      border-bottom: 0 !important; }
   .-skin-default .-filters .-filter:first-child {
     border-radius: 0 0 0 10px; }
   .-skin-default .-filters .-filter:last-child {
@@ -1422,6 +1424,10 @@ GENERAL STYLES
   border-radius: 0 0 10px 10px;
   border-bottom: 2px solid #d1d3d4;
   font-family: "Montserrat", Helvetica, Arial, sans-serif; }
+  .-skin-default .-items .-item .-links .-link a:hover {
+    color: #a33f0a; }
+  .-skin-default .-items .-item .-links .-link a:active {
+    border-bottom: 0px !important; }
 
 .text-slideshow {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
