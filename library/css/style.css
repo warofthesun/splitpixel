@@ -1415,6 +1415,13 @@ GENERAL STYLES
 .-skin-default .-item .title {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: #d1d3d4; }
+.-skin-default .-items .-item .-links .-link a {
+  background-color: #fff;
+  padding: 1.5em;
+  padding-bottom: .5em;
+  border-radius: 0 0 10px 10px;
+  border-bottom: 2px solid #d1d3d4;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif; }
 
 .text-slideshow {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;

@@ -61,6 +61,15 @@ GENERAL STYLES
 			color: $border;
 		}
 	}
+
+	.-items .-item .-links .-link a {
+		background-color: #fff;
+		padding: 1.5em;
+		padding-bottom: .5em;
+		border-radius: 0 0 10px 10px;
+		border-bottom: 2px solid $border;
+		font-family: $sans-serif;
+	}
 }
 
 
