@@ -50,12 +50,12 @@
 										</div>
 									</div>
 								</div>
-								<div style="clear:both" name="work"></div>
+								<div style="clear:both" id="work"></div>
 								<div class="entry-content cf">
 									<?php the_content(); ?>
 								</div>
 								<div style="clear:both"></div>
-								<div class="cheers">
+								<div class="cheers" id="cheers">
 									<div class="d-1of4">&nbsp;</div>
 									<div class="d-1of2">
 									<?php the_field('cheers'); ?>
