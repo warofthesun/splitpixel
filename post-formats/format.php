@@ -13,23 +13,15 @@
                  * folder and replace the function below with the contents of the "format.php" file.
                 */
               ?>
-
+              
               <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-
+              <div class="d-1of2 m-all format-image"><?php the_post_thumbnail( 'archive-600' ); ?></div>
+              <div class="d-1of2 m-all">
                 <header class="article-header entry-header">
 
                   <h1 class="entry-title single-title" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>
 
-                  <p class="byline entry-meta vcard">
-
-                    <?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
-                       /* the time the post was published */
-                       '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
-                       /* the author of the post */
-                       '<span class="by">'.__( 'by', 'bonestheme' ).'</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
-                    ); ?>
-
-                  </p>
+                  
 
                 </header> <?php // end article header ?>
 
@@ -61,12 +53,12 @@
 
                 <footer class="article-footer">
 
-                  <?php printf( __( 'filed under', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
+                  <?php printf( __( 'See all', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
 
                   <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 
                 </footer> <?php // end article footer ?>
 
                 <?php //comments_template(); ?>
-
+              </div>
               </article> <?php // end article ?>
