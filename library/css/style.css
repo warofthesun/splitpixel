@@ -1475,8 +1475,8 @@ body {
   text-align: center;
   font-family: "Lora", Cambria, Times New Roman, Times, serif;
   color: #a8dcd8;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 45px;
+  line-height: 55px;
   padding-bottom: 25px; }
 
 .largetext {
@@ -1512,8 +1512,9 @@ body {
   background-repeat: no-repeat;
   color: #ffffff; }
   .welcome .last-col {
-    padding-top: 100px;
-    padding-right: 150px !important; }
+    padding-top: 30px;
+    padding-right: 50px !important;
+    padding-left: 20px; }
 
 .cheers {
   padding: 1.5em;
@@ -1523,10 +1524,6 @@ body {
   padding: 0 1.5em; }
   .about .location__logo img {
     width: 50%; }
-  .about .emma img {
-    margin-left: -30px; }
-  .about .location__content {
-    padding: 0 3em; }
   .about .location__responsibilities {
     text-align: justify; }
     .about .location__responsibilities li {
@@ -1556,6 +1553,8 @@ body {
     content: "|";
     color: #f26a21;
     margin-left: 10px; }
+  .about .tools li:last-child:after {
+    content: ""; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1666,14 +1665,14 @@ HEADER STYLES
 *********************/
 #logo {
   margin: 0;
-  float: left; }
+  text-align: center; }
   #logo a {
     color: #fff; }
 
 #logo h1, #logo.h1 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 25px;
   text-transform: uppercase;
   margin-top: 20px; }
 
@@ -1691,13 +1690,15 @@ and more scalable.
   text-align: center;
   margin-top: 20px; }
   .intro__nav .btn {
-    margin: 0 10px; }
+    margin: 10px; }
 
 .nav {
   border-bottom: 0;
   margin: 0;
+  margin-bottom: 20px;
   float: right;
   margin-top: 8px;
+  text-align: center;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -2188,6 +2189,57 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
+  .intro {
+    text-align: center;
+    font-family: "Lora", Cambria, Times New Roman, Times, serif;
+    color: #a8dcd8;
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 25px; }
+
+  .largetext {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 3px 3px 0 #bbb, 6px 6px 1px rgba(0, 0, 0, 0.1), 0px 0 5px rgba(0, 0, 0, 0.1), 1px 1px 3px rgba(0, 0, 0, 0.3), 2px 3px 5px rgba(0, 0, 0, 0.2), 3px 5px 10px rgba(0, 0, 0, 0.25), 4px 10px 10px rgba(0, 0, 0, 0.2), 5px 20px 20px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold; }
+
+  .largetext-alt {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 0px 0 5px rgba(0, 0, 0, 0.1), 1px 1px 3px rgba(0, 0, 0, 0.3), 2px 3px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold; }
+
+  .greeting {
+    font-size: 35px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    margin-bottom: 20px; }
+
+  #inner-content {
+    box-shadow: 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
+  .welcome {
+    background-color: #1e2327;
+    float: left;
+    width: 100%;
+    background-image: url("../images/about-me.jpg");
+    height: 420px;
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #ffffff; }
+    .welcome .last-col {
+      padding-top: 100px;
+      padding-right: 150px !important;
+      padding-left: 0px; }
+
+  .intro__nav {
+    text-align: center;
+    margin-top: 20px; }
+    .intro__nav .btn {
+      margin: 0 10px; }
+
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -2205,9 +2257,54 @@ you can add resource intensive styles.
   .about .tools__right ul {
     border-left: 0px; }
 
+  .about {
+    padding: 0 1.5em; }
+    .about .location__logo img {
+      width: 50%; }
+    .about .emma img {
+      margin-left: -30px; }
+    .about .location__content {
+      padding: 0 3em; }
+    .about .location__responsibilities {
+      text-align: justify; }
+      .about .location__responsibilities li {
+        margin: 10px 0; }
+      .about .location__responsibilities .sh-link a {
+        color: #006b81 !important;
+        text-decoration: none;
+        font-family: "Montserrat", Helvetica, Arial, sans-serif;
+        font-weight: bold; }
+      .about .location__responsibilities .sh-link a:hover {
+        color: #f26a21 !important; }
+      .about .location__responsibilities .sh-hide a:after {
+        content: "\f05a";
+        font-family: fontawesome;
+        margin-left: 10px;
+        color: #f26a21; }
+      .about .location__responsibilities .sh-show a:after {
+        content: "\f00d";
+        font-family: fontawesome;
+        margin-left: 10px;
+        color: #f26a21; }
+    .about .tools li {
+      display: block; }
+
   /*********************
   HEADER STYLES
   *********************/
+  #logo {
+    margin: 0;
+    float: left; }
+    #logo a {
+      color: #fff; }
+
+  #logo h1, #logo.h1 {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px; }
+
   /*********************
   NAVIGATION STYLES
   *********************/

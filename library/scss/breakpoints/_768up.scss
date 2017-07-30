@@ -17,7 +17,90 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
+.intro {
+	text-align: center;
+	font-family: $serif;
+	color: #a8dcd8;
+	font-size: 60px;
+	line-height: 60px;
+	padding-bottom: 25px;
+}
+
+.largetext {
+	font-family: $sans-serif;
+	text-shadow:	1px 1px 0 #ccc,
+					2px 2px 0 #c9c9c9,
+					3px 3px 0 #bbb,
+					6px 6px 1px rgba(0,0,0,.1),
+					0px 0 5px rgba(0,0,0,.1),
+					1px 1px 3px rgba(0,0,0,.3),
+					2px 3px 5px rgba(0,0,0,.2),
+					3px 5px 10px rgba(0,0,0,.25),
+					4px 10px 10px rgba(0,0,0,.2),
+					5px 20px 20px rgba(0,0,0,.15);
+	text-transform: uppercase;
+	color: $white;
+	font-weight: bold;
+}
+
+.largetext-alt {
+	font-family: $sans-serif;
+	text-shadow:	1px 1px 0 #ccc,
+					2px 2px 0 #c9c9c9,
+					0px 0 5px rgba(0,0,0,.1),
+					1px 1px 3px rgba(0,0,0,.3),
+					2px 3px 5px rgba(0,0,0,.2),;
+	text-transform: uppercase;
+	color: $white;
+	font-weight: bold;
+}
+
+.greeting {
+	font-size: 35px;
+	border-bottom: 1px solid #ffffff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#inner-content {
+	box-shadow: 0 6px 1px rgba(0,0,0,.1),
+					0 0 5px rgba(0,0,0,.1),
+					0 1px 3px rgba(0,0,0,.3),
+					0 3px 5px rgba(0,0,0,.2),
+					0 5px 10px rgba(0,0,0,.25),
+					0 10px 10px rgba(0,0,0,.2),
+					0 20px 20px rgba(0,0,0,.15);
+}
+
+.welcome {
+	background-color: #1e2327;
+	float: left;
+	width: 100%;
+	background-image: url('../images/about-me.jpg');
+	height: 420px;
+	background-position: left;
+	background-repeat: no-repeat;
+	color: #ffffff;
+
+	.last-col {
+		padding-top: 100px;
+		padding-right: 150px !important;
+		padding-left: 0px;
+	}
+}
+
+.intro__nav {
+	text-align: center;
+	margin-top: 20px;
+
+	.btn {
+		margin: 0 10px;
+	}
+}
+
 body {}
+
+
 
 /*********************
 LAYOUT & GRID STYLES
@@ -53,13 +136,95 @@ LAYOUT & GRID STYLES
 		}
 	}
 }
+
+.about {
+	padding:0 1.5em;
+
+	.location__logo {
+		img {
+			width: 50%;
+		}
+	}
+
+	.emma {
+		img {
+			margin-left: -30px;
+		}
+	}
+
+	.location__content {
+		padding: 0 3em;
+	}
+
+	.location__responsibilities {
+		text-align: justify;
+		li {
+			margin:10px 0;
+		}
+
+		.sh-link {
+			a {
+				color: $primary !important;
+				text-decoration: none;
+				font-family: $sans-serif;
+				font-weight: bold;
+
+			}
+
+			a:hover {
+				color: $action !important;
+			}
+
+		}
+
+		.sh-hide {
+				a:after {
+				content: "\f05a";
+				font-family: fontawesome;
+				margin-left: 10px;
+				color: $action;
+			}
+		}
+
+		.sh-show {
+				a:after {
+				content: "\f00d";
+				font-family: fontawesome;
+				margin-left: 10px;
+				color: $action;
+			}
+		}
+	}
+
+	.tools {
+
+		li {
+			display: block;
+		}
+	}
+}
 /*********************
 HEADER STYLES
 *********************/
 
 .header {}
 
-	#logo {}
+#logo {
+	margin: 0;
+	float: left;
+	a {
+		color: $white;
+	}
+}
+
+#logo h1, #logo.h1 {
+	font-family: $sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 20px;
+
+}
 
 /*********************
 NAVIGATION STYLES
@@ -310,4 +475,3 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
-

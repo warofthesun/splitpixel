@@ -147,8 +147,8 @@ body {
 	text-align: center;
 	font-family: $serif;
 	color: #a8dcd8;
-	font-size: 60px;
-	line-height: 60px;
+	font-size: 45px;
+	line-height: 55px;
 	padding-bottom: 25px;
 }
 
@@ -209,8 +209,9 @@ body {
 	color: #ffffff;
 
 	.last-col {
-		padding-top: 100px;
-		padding-right: 150px !important;
+		padding-top: 30px;
+		padding-right: 50px !important;
+		padding-left: 20px;
 	}
 }
 
@@ -230,12 +231,10 @@ body {
 
 	.emma {
 		img {
-			margin-left: -30px;
 		}
 	}
 
 	.location__content {
-		padding: 0 3em;
 	}
 
 	.location__responsibilities {
@@ -290,6 +289,10 @@ body {
 			content: "|";
 			color: $action;
 			margin-left: 10px;
+		}
+
+		li:last-child:after {
+			content: "";
 		}
 	}
 }
@@ -427,22 +430,22 @@ HEADER STYLES
 .header {
 	;
 }
-	#logo {
-		margin: 0;
-		float: left;
-		a {
-			color: $white;
-		}
+#logo {
+	margin: 0;
+	text-align: center;
+	a {
+		color: $white;
 	}
+}
 
-	#logo h1, #logo.h1 {
-		font-family: $sans-serif;
-		font-weight: bold;
-		font-size: 16px;
-		text-transform: uppercase;
-		margin-top: 20px;
+#logo h1, #logo.h1 {
+	font-family: $sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-top: 20px;
 
-	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -461,15 +464,18 @@ and more scalable.
 	margin-top: 20px;
 
 	.btn {
-		margin: 0 10px;
+		margin: 10px;
 	}
 }
 
 .nav {
 	border-bottom: 0;
 	margin: 0;
+	margin-bottom: 20px;
 	float: right;
 	margin-top: 8px;
+	text-align: center;
+
 	li {
 		display: inline-block;
 		margin: 0;
