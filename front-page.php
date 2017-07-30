@@ -55,7 +55,7 @@
 									<?php the_content(); ?>
 								</div>
 								<div style="clear:both"></div>
-								<div class="cheers m-all">
+								<div class="cheers">
 									<div class="d-1of4">&nbsp;</div>
 									<div class="d-1of2">
 									<?php the_field('cheers'); ?>

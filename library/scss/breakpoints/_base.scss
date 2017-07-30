@@ -102,6 +102,12 @@ GENERAL STYLES
 	}
 }
 
+.format-image {
+	img {
+		width: 100%;
+	}
+}
+
 
 body {
 	font-family: $serif;
@@ -189,6 +195,7 @@ body {
 
 .cheers {
 	padding: 1.5em;
+	display: inline-block;
 }
 
 .about {
@@ -533,7 +540,6 @@ POSTS & CONTENT STYLES
 		.hentry {
 			background-color: $white;
 			border-radius: 3px;
-			padding-bottom: 1.5em;
 			border: 1px solid $border-color;
 
 			header {
@@ -1147,8 +1153,10 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $black;
+	background-color: $primary;
 	color: $light-gray;
+	margin-top: 20px;
+	padding: 1.5em;
 }
 
 	/*

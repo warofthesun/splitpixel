@@ -1443,6 +1443,9 @@ GENERAL STYLES
     #text-slider-controls .nav-color:hover {
       color: #a33f0a; }
 
+.format-image img {
+  width: 100%; }
+
 body {
   font-family: "Lora", Cambria, Times New Roman, Times, serif;
   font-size: 150%;
@@ -1500,7 +1503,8 @@ body {
     padding-right: 150px !important; }
 
 .cheers {
-  padding: 1.5em; }
+  padding: 1.5em;
+  display: inline-block; }
 
 .about {
   padding: 0 1.5em; }
@@ -1727,7 +1731,6 @@ POSTS & CONTENT STYLES
 .hentry {
   background-color: #fff;
   border-radius: 3px;
-  padding-bottom: 1.5em;
   border: 1px solid #ccc; }
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
@@ -2055,8 +2058,10 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #333333;
-  color: #f8f9fa; }
+  background-color: #006b81;
+  color: #f8f9fa;
+  margin-top: 20px;
+  padding: 1.5em; }
 
 /*
 if you checked out the link above:
