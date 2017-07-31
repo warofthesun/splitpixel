@@ -1396,6 +1396,16 @@ div.pp_overlay, div.pp_pic_holder {
 div.pp_default .pp_social {
   display: none !important; }
 
+.gallery-item {
+  float: left;
+  margin-right: 1em; }
+  .gallery-item img {
+    box-shadow: 1px 1px 6px #ddd;
+    border: 2px solid #fff; }
+
+.gallery-item:last-child {
+  margin-right: 0; }
+
 .-skin-default .-filters {
   text-align: center !important; }
   .-skin-default .-filters a.-filter.active {
