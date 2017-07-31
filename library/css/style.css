@@ -1390,6 +1390,9 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
+div.pp_overlay, div.pp_pic_holder {
+  display: none !important; }
+
 div.pp_default .pp_social {
   display: none !important; }
 
