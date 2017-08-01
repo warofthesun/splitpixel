@@ -15,14 +15,18 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								
 
-								<section class="entry-content cf" itemprop="articleBody">
-									<?php
-										// the content (pretty self explanatory huh)
-										the_content();
-									?>
-								</section>
+								<div class="d-1of2 m-all">
+									<section class="entry-content no-border cf" itemprop="articleBody">
+										<?php
+											// the content (pretty self explanatory huh)
+											the_content();
+										?>
+									</section>
+								</div>
+								<div class="d-1of2 m-all last-col format-image">
+									<?php the_post_thumbnail('archive-600') ?>
+								</div>
 
 
 								<footer class="article-footer">
