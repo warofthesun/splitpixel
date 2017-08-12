@@ -1016,7 +1016,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.btn, .blue-btn, .comment-reply-link, #submit, ul#menu-top li:last-child {
+.btn, .wpcf7-form-control .wpcf7-submit, .blue-btn, .comment-reply-link, #submit, ul#menu-top li:last-child {
   display: inline-block;
   position: relative;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
@@ -1035,11 +1035,11 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   box-shadow: 1px 3px 0px #b44614;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .btn:hover, .blue-btn:hover, .comment-reply-link:hover, #submit:hover, ul#menu-top li:hover:last-child, .btn:focus, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, ul#menu-top li:focus:last-child, .btn:visited, .blue-btn:visited, .comment-reply-link:visited, #submit:visited, ul#menu-top li:visited:last-child {
+  .btn:hover, .wpcf7-form-control .wpcf7-submit:hover, .blue-btn:hover, .comment-reply-link:hover, #submit:hover, ul#menu-top li:hover:last-child, .btn:focus, .wpcf7-form-control .wpcf7-submit:focus, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, ul#menu-top li:focus:last-child, .btn:visited, .wpcf7-form-control .wpcf7-submit:visited, .blue-btn:visited, .comment-reply-link:visited, #submit:visited, ul#menu-top li:visited:last-child {
     color: #fff !important;
     text-decoration: none;
     outline: none; }
-  .btn:active, .blue-btn:active, .comment-reply-link:active, #submit:active, ul#menu-top li:active:last-child {
+  .btn:active, .wpcf7-form-control .wpcf7-submit:active, .blue-btn:active, .comment-reply-link:active, #submit:active, ul#menu-top li:active:last-child {
     top: 1px;
     box-shadow: 1px 1px 0px #b44614; }
 
@@ -1048,12 +1048,12 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-.btn {
+.btn, .wpcf7-form-control .wpcf7-submit {
   background-color: #f26a21;
   text-shadow: 1px 1px 0 #a33f0a; }
-  .btn:hover {
+  .btn:hover, .wpcf7-form-control .wpcf7-submit:hover {
     background-color: #ec5b0e; }
-  .btn:active {
+  .btn:active, .wpcf7-form-control .wpcf7-submit:active {
     text-shadow: -1px -1px 0 #a33f0a; }
 
 .blue-btn, .comment-reply-link, #submit {
@@ -1487,9 +1487,17 @@ body {
   background-color: #a8dcd8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../images/header-background.png");
-  background-position: top;
-  background-repeat: no-repeat; }
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006b81+0,a8dcd9+100 */
+  background: #006b81;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #006b81 0%, #a8dcd9 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #006b81 0%, #a8dcd9 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #006b81 0%, #a8dcd9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006b81', endColorstr='#a8dcd9',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
 
 .intro {
   text-align: center;

@@ -164,11 +164,15 @@ body {
 	line-height: 1.5;
 	color: $text-color;
 	background-color: $primary-lite;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
-  	background-image: url('../images/header-background.png');
-  	background-position: top;
-  	background-repeat: no-repeat;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006b81+0,a8dcd9+100 */
+	background: rgb(0,107,129); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(0,107,129,1) 0%, rgba(168,220,217,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(0,107,129,1) 0%,rgba(168,220,217,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(0,107,129,1) 0%,rgba(168,220,217,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006b81', endColorstr='#a8dcd9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .intro {

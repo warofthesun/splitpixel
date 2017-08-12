@@ -64,7 +64,7 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 
-.btn {
+.btn, .wpcf7-form-control .wpcf7-submit {
   @extend %btn;
   background-color:$action;
 
@@ -75,7 +75,7 @@ and it will create a button dependant on those variables.
   &:active {
 	text-shadow:  -1px -1px 0 $action-dark;
   }
-  
+
 
   text-shadow:  1px 1px 0 $action-dark;
 }
@@ -110,7 +110,7 @@ ul#menu-top {
   	  &:active {
   		text-shadow:  -1px -1px 0 $action-dark;
   	  }
-  	  
+
 
   	  text-shadow:  1px 1px 0 $action-dark;
 
