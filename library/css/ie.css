@@ -441,7 +441,7 @@ LAYOUT & GRID STYLES
   .about .location__content {
     padding: 0 3em; }
   .about .location__responsibilities {
-    text-align: justify; }
+    text-align: left; }
     .about .location__responsibilities li {
       margin: 10px 0; }
     .about .location__responsibilities .sh-link a {
