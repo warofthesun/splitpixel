@@ -1449,16 +1449,24 @@ div.pp_default .pp_social {
     border-bottom: 0px !important; }
 
 .text-slideshow {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-family: "Lora", Cambria, Times New Roman, Times, serif;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 200;
   line-height: 30px;
-  color: #006b81;
   text-align: left; }
+  .text-slideshow:before {
+    content: "\f10d";
+    font-family: "FontAwesome";
+    font-size: 3em;
+    position: absolute;
+    top: 20px;
+    opacity: 0.1; }
   .text-slideshow span {
-    font-family: "Lora", Cambria, Times New Roman, Times, serif;
-    color: #333333;
-    font-weight: 200;
-    font-size: 18px;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    color: #006b81;
+    font-size: 20px;
+    font-weight: bold;
     padding-top: 20px;
     border-top: 1px solid #d1d3d4;
     margin-top: 20px;
