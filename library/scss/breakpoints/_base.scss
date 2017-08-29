@@ -93,6 +93,26 @@ div.pp_default .pp_social {
 		}
 	}
 
+	.-items {
+			.email .title:after {
+				content: "  \61";
+			}
+
+			.web .title:after {
+				content: "  \62";
+			}
+
+			.packaging .title:after {
+				content: "  \63";
+			}
+
+			.title:after {
+				font-family: "splitpixel" !important;
+				margin-left: 3px;
+				vertical-align: bottom;
+			}
+	}
+
 	.-items .-item .-links .-link a {
 		background-color: #fff;
 		padding: 1.5em;
@@ -338,6 +358,8 @@ body {
 		}
 	}
 }
+
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class

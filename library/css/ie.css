@@ -193,6 +193,45 @@ The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
 */
+@font-face {
+  font-family: "splitpixel";
+  src: url("../fonts/splitpixel.eot");
+  src: url("../fonts/splitpixel.eot?#iefix") format("embedded-opentype"), url("../fonts/splitpixel.woff") format("woff"), url("../fonts/splitpixel.ttf") format("truetype"), url("../fonts/splitpixel.svg#splitpixel") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-icon]:before {
+  font-family: "splitpixel" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="sp-icon-"]:before,
+[class*=" sp-icon-"]:before {
+  font-family: "splitpixel" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.sp-icon-mail:before {
+  content: "\61"; }
+
+.sp-icon-monitor:before {
+  content: "\62"; }
+
+.sp-icon-package:before {
+  content: "\63"; }
+
 /*
  i imported this one in the functions file so bones would look sweet.
  don't forget to remove it for your site.
