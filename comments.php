@@ -9,7 +9,7 @@ if ( post_password_required() ) {
 }
 
 ?>
-
+<!--comments-->
 <?php // You can start editing here. ?>
 
   <?php if ( have_comments() ) : ?>
@@ -45,6 +45,5 @@ if ( post_password_required() ) {
     <?php endif; ?>
 
   <?php endif; ?>
-
+<!--comment form-->
   <?php comment_form(); ?>
-

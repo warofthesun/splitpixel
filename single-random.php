@@ -14,14 +14,14 @@
  * For more info: http://codex.wordpress.org/Post_Type_Templates
 */
 ?>
-
+<!--single-random-->
 <?php get_header(); ?>
 
-			<div id="content">
+			<div id="content" class="wrap cf">
 
-				<div id="inner-content" class="wrap cf">
+				<div id="inner-content" class="m-all t-2of3 d-5of7 last-col cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main"  role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -63,11 +63,9 @@
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
-									<p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __( 'Custom Tags:', 'bonestheme' ) . '</span> ', ', ' ) ?></p>
+									<p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __( 'More Stuff About >', 'bonestheme' ) . '</span> ', ', ' ) ?></p>
 
 								</footer>
-
-								<?php comments_template(); ?>
 
 							</article>
 
@@ -90,11 +88,8 @@
 							<?php endif; ?>
 
 						</main>
-
-						<?php get_sidebar(); ?>
-
 				</div>
-
+					<?php get_sidebar(); ?>
 			</div>
 
 <?php get_footer(); ?>
