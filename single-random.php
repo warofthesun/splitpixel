@@ -15,7 +15,7 @@
 */
 ?>
 <!--single-random-->
-<?php get_header(); ?>
+<?php get_header('random'); ?>
 
 			<div id="content" class="wrap cf">
 

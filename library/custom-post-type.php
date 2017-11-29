@@ -80,7 +80,7 @@ function random_post_type() {
 		array('hierarchical' => true,     /* if this is true, it acts like categories */
 			'labels' => array(
 				'name' => __( 'Custom Categories', 'bonestheme' ), /* name of the custom taxonomy */
-				'singular_name' => __( 'Custom Category', 'bonestheme' ), /* single taxonomy name */
+				'singular_name' => __( 'All', 'bonestheme' ), /* single taxonomy name */
 				'search_items' =>  __( 'Search Custom Categories', 'bonestheme' ), /* search title for taxomony */
 				'all_items' => __( 'All Custom Categories', 'bonestheme' ), /* all title for taxonomies */
 				'parent_item' => __( 'Parent Custom Category', 'bonestheme' ), /* parent title for taxonomy */
@@ -93,7 +93,7 @@ function random_post_type() {
 			'show_admin_column' => true,
 			'show_ui' => true,
 			'query_var' => true,
-			'rewrite' => array( 'slug' => 'custom-slug' ),
+			'rewrite' => array( 'slug' => 'all' ),
 		)
 	);
 
@@ -103,7 +103,7 @@ function random_post_type() {
 		array('hierarchical' => false,    /* if this is false, it acts like tags */
 			'labels' => array(
 				'name' => __( 'Custom Tags', 'bonestheme' ), /* name of the custom taxonomy */
-				'singular_name' => __( 'Custom Tag', 'bonestheme' ), /* single taxonomy name */
+				'singular_name' => __( 'All', 'bonestheme' ), /* single taxonomy name */
 				'search_items' =>  __( 'Search Custom Tags', 'bonestheme' ), /* search title for taxomony */
 				'all_items' => __( 'All Custom Tags', 'bonestheme' ), /* all title for taxonomies */
 				'parent_item' => __( 'Parent Custom Tag', 'bonestheme' ), /* parent title for taxonomy */
