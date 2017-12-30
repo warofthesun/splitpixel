@@ -8,43 +8,27 @@
 						<main id="main" class="m-all t-3of3 d-7of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php
-							
+
 							the_archive_description( '<div class="taxonomy-description">', '</div>' );
 							?>
-							
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
-								<header class="entry-header article-header">
 
-									
-									
-
-								</header>
 
 								<section class="entry-content cf">
+							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 								<div class="d-1of3 m-all">
-
-									<?php the_post_thumbnail( 'archive-600' ); ?>
+									<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+										<?php the_post_thumbnail( 'archive-600' ); ?>
+										<h3 class="h2 entry-title"><?php the_title() ?></h3>
+									</a>
 								</div>
-								<div class="d-2of3 m-all">
-									<h3 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<?php the_excerpt(); ?>
-								</div>
-
-								</section>
-
-								<footer class="article-footer">
-
-								</footer>
-
-							</article>
-
 							<?php endwhile; ?>
+						</section>
 
-									<?php bones_page_navi(); ?>
-
+						</article>
+									
 							<?php else : ?>
 
 									<article id="post-not-found" class="hentry cf">
