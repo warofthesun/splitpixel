@@ -993,6 +993,9 @@ them however you see fit.
     float: left;
     padding-right: 0.75em;
     width: 8.33%; } }
+.entry-content .nimble-portfolio img {
+  margin: 0; }
+
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
