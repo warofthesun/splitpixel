@@ -1,4 +1,4 @@
-
+<!--format-->
               <?php
                 /*
                  * Packaging Format
@@ -13,6 +13,9 @@
                     &nbsp;
                   </div>
                   <div class="d-4of5 last-col">
+                      <?php
+                      $thecontent = get_the_content();
+                      if(!empty($thecontent)) { ?>
                     <section class="entry-content cf" itemprop="articleBody">
                       <?php
                         // the content (pretty self explanatory huh)
@@ -20,6 +23,7 @@
 
                       ?>
                     </section> <?php // end article section ?>
+                    <?php } ?>
                   </div>
                     <div class="d-1of12">
                       &nbsp;
