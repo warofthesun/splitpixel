@@ -1751,6 +1751,9 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
+#inner-header {
+  padding: 0 1em; }
+
 #logo {
   margin: 0;
   text-align: center; }
@@ -2194,6 +2197,14 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+.copyright {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px; }
+  .copyright a {
+    color: #fff; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
