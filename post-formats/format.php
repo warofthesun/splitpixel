@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div style="clear:both"></div>
-              <div class="d-1of2 m-all format-image last-col" style="padding-right:.5em;"><img src="<?php the_field( 'first_feature' ); ?>"></div>
+              <div class="d-1of2 m-all format-image" style="padding-right:.5em;"><img src="<?php the_field( 'first_feature' ); ?>"></div>
               <div class="d-1of2 m-all format-image last-col" style="padding-left:.5em;"><img src="<?php the_field( 'second_feature' ); ?>"></div>
               <div class="d-all m-all">
 
