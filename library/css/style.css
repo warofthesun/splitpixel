@@ -1478,7 +1478,7 @@ div.pp_default .pp_social {
 .-skin-default .-item .title {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: #d1d3d4; }
-.-skin-default .-items .email .title:after {
+.-skin-default .-items .email .title:after, .-skin-default .-items .misc .title:after {
   content: "  \61"; }
 .-skin-default .-items .web .title:after {
   content: "  \62"; }

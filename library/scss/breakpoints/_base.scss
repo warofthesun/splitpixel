@@ -94,7 +94,7 @@ div.pp_default .pp_social {
 	}
 
 	.-items {
-			.email .title:after {
+			.email .title:after, .misc .title:after {
 				content: "  \61";
 			}
 
