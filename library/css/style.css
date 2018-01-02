@@ -1478,11 +1478,11 @@ div.pp_default .pp_social {
 .-skin-default .-item .title {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: #d1d3d4; }
-.-skin-default .-items .email .title:after, .-skin-default .-items .misc .title:after {
+.-skin-default .-items .email .title:after {
   content: "  \61"; }
 .-skin-default .-items .web .title:after {
   content: "  \62"; }
-.-skin-default .-items .packaging .title:after {
+.-skin-default .-items .packaging .title:after, .-skin-default .-items .misc .title:after {
   content: "  \63"; }
 .-skin-default .-items .title:after {
   font-family: "splitpixel" !important;
@@ -1582,10 +1582,11 @@ body {
   font-weight: bold; }
 
 .greeting {
-  font-size: 35px;
+  font-size: 30px;
   border-bottom: 1px solid #ffffff;
-  text-align: center;
-  margin-bottom: 20px; }
+  text-align: left;
+  margin-bottom: 20px;
+  line-height: 33px; }
 
 #inner-content {
   box-shadow: 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
@@ -1596,7 +1597,7 @@ body {
   width: 100%;
   background-image: url("../images/about-me.jpg");
   height: 420px;
-  background-position: left;
+  background-position-x: -265px;
   background-repeat: no-repeat;
   color: #ffffff; }
   .welcome .last-col {
@@ -2349,12 +2350,12 @@ you can add resource intensive styles.
     width: 100%;
     background-image: url("../images/about-me.jpg");
     height: 420px;
-    background-position: left;
+    background-position-x: -150px;
     background-repeat: no-repeat;
     color: #ffffff; }
     .welcome .last-col {
       padding-top: 100px;
-      padding-right: 150px !important;
+      padding-right: 30px !important;
       padding-left: 0px; }
 
   .intro__nav {
@@ -2555,7 +2556,24 @@ you can add resource intensive styles.
   
   ******************************************************************/
   .wrap {
-    width: 1040px; } }
+    width: 1040px; }
+
+  .welcome {
+    background-color: #1e2327;
+    float: left;
+    width: 100%;
+    background-image: url("../images/about-me.jpg");
+    height: 420px;
+    background-position-x: -80px;
+    background-repeat: no-repeat;
+    color: #ffffff; }
+    .welcome .last-col {
+      padding-top: 130px;
+      padding-right: 100px !important;
+      padding-left: 0px; }
+
+  .greeting {
+    font-size: 33px; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

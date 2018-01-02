@@ -74,5 +74,5 @@
 					</nav>
 
 				</div>
-				<div class="intro">I'm a<div class="largetext">front end & email</div>designer/developer</div>
+				<div class="intro">I'm a<div class="largetext">front end &amp; email</div>designer &amp; developer</div>
 			</header>

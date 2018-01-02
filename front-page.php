@@ -1,7 +1,7 @@
 <?php
 /*
  Template Name: Front Page
- 
+
 */
 ?>
 <?php get_header(); ?>
@@ -16,10 +16,10 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 								<div class="welcome">
-									<div class="d-1of2 m-all">
+									<div class="d-3of7 t-1of2 m-1of3">
 										&nbsp;
 									</div>
-									<div class="d-1of2 m-all last-col section_one">
+									<div class="d-4of7 t-1of2 m-2of3 last-col section_one">
 										<div><?php the_field('section_one'); ?></div>
 									</div>
 								</div>
@@ -42,7 +42,7 @@
 											</div>
 										</div>
 									</div>
-									
+
 									<div class="d-1of3 t-all m-all">
 										<h2>Tools I Use</h2>
 										<div class="d-all">
@@ -62,7 +62,7 @@
 									</div>
 									<div class="d-1of4">&nbsp;</div>
 								</div>
-									
+
 							</article>
 
 							<?php endwhile; ?>
@@ -88,7 +88,7 @@
 
 						</main>
 
-					
+
 
 				</div>
 

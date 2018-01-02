@@ -94,7 +94,7 @@ div.pp_default .pp_social {
 	}
 
 	.-items {
-			.email .title:after, .misc .title:after {
+			.email .title:after {
 				content: "  \61";
 			}
 
@@ -102,7 +102,7 @@ div.pp_default .pp_social {
 				content: "  \62";
 			}
 
-			.packaging .title:after {
+			.packaging .title:after, .misc .title:after {
 				content: "  \63";
 			}
 
@@ -244,10 +244,11 @@ body {
 }
 
 .greeting {
-	font-size: 35px;
+	font-size: 30px;
 	border-bottom: 1px solid #ffffff;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 20px;
+	line-height: 33px;
 }
 
 #inner-content {
@@ -266,7 +267,7 @@ body {
 	width: 100%;
 	background-image: url('../images/about-me.jpg');
 	height: 420px;
-	background-position: left;
+	background-position-x: -265px;
 	background-repeat: no-repeat;
 	color: #ffffff;
 

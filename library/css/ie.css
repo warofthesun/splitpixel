@@ -442,12 +442,12 @@ GENERAL STYLES
   width: 100%;
   background-image: url("../images/about-me.jpg");
   height: 420px;
-  background-position: left;
+  background-position-x: -150px;
   background-repeat: no-repeat;
   color: #ffffff; }
   .welcome .last-col {
     padding-top: 100px;
-    padding-right: 150px !important;
+    padding-right: 30px !important;
     padding-left: 0px; }
 
 .intro__nav {
@@ -642,6 +642,23 @@ be seen on the Desktop.
 ******************************************************************/
 .wrap {
   width: 1040px; }
+
+.welcome {
+  background-color: #1e2327;
+  float: left;
+  width: 100%;
+  background-image: url("../images/about-me.jpg");
+  height: 420px;
+  background-position-x: -80px;
+  background-repeat: no-repeat;
+  color: #ffffff; }
+  .welcome .last-col {
+    padding-top: 130px;
+    padding-right: 100px !important;
+    padding-left: 0px; }
+
+.greeting {
+  font-size: 33px; }
 
 /*
 you can call the larger styles if you want, but there's really no need
