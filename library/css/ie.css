@@ -423,10 +423,12 @@ GENERAL STYLES
   font-weight: bold; }
 
 .greeting {
-  font-size: 35px;
+  font-size: 25px;
   border-bottom: 1px solid #ffffff;
   text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-shadow: none !important;
+  padding-bottom: 10px; }
 
 .gallery-item {
   float: left; }
