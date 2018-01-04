@@ -45,6 +45,7 @@ div.pp_default .pp_social {
 .-skin-default {
 	.-filters  {
 		text-align: center !important;
+		padding-top: 3px;
 
 		a.-filter.active {
 			background-color: #fff !important;
@@ -211,7 +212,7 @@ body {
 	color: #a8dcd8;
 	font-size: 45px;
 	line-height: 55px;
-	padding-bottom: 25px;
+	padding-bottom: 50px;
 }
 
 .largetext {
@@ -252,24 +253,31 @@ body {
 }
 
 #inner-content {
-	box-shadow: 0 6px 1px rgba(0,0,0,.1),
+	/* box-shadow: 0 6px 1px rgba(0,0,0,.1),
 					0 0 5px rgba(0,0,0,.1),
 					0 1px 3px rgba(0,0,0,.3),
 					0 3px 5px rgba(0,0,0,.2),
 					0 5px 10px rgba(0,0,0,.25),
 					0 10px 10px rgba(0,0,0,.2),
-					0 20px 20px rgba(0,0,0,.15);
+					0 20px 20px rgba(0,0,0,.15); */
+}
+
+.header_wrap {
+	width: 100%;
+	float: left;
+	background-color: #1e2327;
+	border-top: 1px solid #fff;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .welcome {
-	background-color: #1e2327;
-	float: left;
 	width: 100%;
-	background-image: url('../images/about-me.jpg');
+	background-image: url('../images/frontpage-hero.jpg');
 	height: 420px;
 	background-position-x: -265px;
 	background-repeat: no-repeat;
 	color: #ffffff;
+	margin:2em auto;
 
 	.last-col {
 		padding-top: 30px;
@@ -284,7 +292,9 @@ body {
 }
 
 .about {
-	padding:0 1.5em;
+	background-color: rgba(255,255,255,1);
+	float: left;
+	padding:1.5em;
 
 	.location__logo {
 		img {
@@ -633,10 +643,16 @@ POSTS & CONTENT STYLES
 	margin-top: 1.5em;
 }
 
+
+
 		.hentry {
-			background-color: $white;
+			background-color: #fff;
 			border-radius: 3px;
-			border: 1px solid $border-color;
+			border: 0px solid $border-color;
+
+			.front-page & {
+				background-color: transparent;
+			}
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -699,7 +715,7 @@ POSTS & CONTENT STYLES
 				background-color: #f1f2f2;
 				border-top: 2px solid #d1d3d4;
 				border-bottom: 2px solid #d1d3d4;
-				margin-top: 30px;
+				margin:0;
 			}
 		}
 		.entry-content {

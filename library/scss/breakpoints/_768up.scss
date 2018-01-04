@@ -23,7 +23,7 @@ GENERAL STYLES
 	color: #a8dcd8;
 	font-size: 60px;
 	line-height: 60px;
-	padding-bottom: 25px;
+	padding-bottom: 50px;
 }
 
 .largetext {
@@ -68,25 +68,10 @@ GENERAL STYLES
 
 }
 
-#inner-content {
-	box-shadow: 0 6px 1px rgba(0,0,0,.1),
-					0 0 5px rgba(0,0,0,.1),
-					0 1px 3px rgba(0,0,0,.3),
-					0 3px 5px rgba(0,0,0,.2),
-					0 5px 10px rgba(0,0,0,.25),
-					0 10px 10px rgba(0,0,0,.2),
-					0 20px 20px rgba(0,0,0,.15);
-}
-
 .welcome {
 	background-color: #1e2327;
-	float: left;
-	width: 100%;
-	background-image: url('../images/about-me.jpg');
-	height: 420px;
 	background-position-x: -150px;
-	background-repeat: no-repeat;
-	color: #ffffff;
+
 
 	.last-col {
 		padding-top: 100px;
@@ -145,7 +130,7 @@ LAYOUT & GRID STYLES
 }
 
 .about {
-	padding:0 1.5em;
+
 
 	.location__logo {
 		img {

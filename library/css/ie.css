@@ -406,7 +406,7 @@ GENERAL STYLES
   color: #a8dcd8;
   font-size: 60px;
   line-height: 60px;
-  padding-bottom: 25px; }
+  padding-bottom: 50px; }
 
 .largetext {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
@@ -433,18 +433,9 @@ GENERAL STYLES
 .gallery-item {
   float: left; }
 
-#inner-content {
-  box-shadow: 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
-
 .welcome {
   background-color: #1e2327;
-  float: left;
-  width: 100%;
-  background-image: url("../images/about-me.jpg");
-  height: 420px;
-  background-position-x: -150px;
-  background-repeat: no-repeat;
-  color: #ffffff; }
+  background-position-x: -150px; }
   .welcome .last-col {
     padding-top: 100px;
     padding-right: 30px !important;
@@ -474,37 +465,35 @@ LAYOUT & GRID STYLES
 .about .tools__right ul {
   border-left: 0px; }
 
-.about {
-  padding: 0 1.5em; }
-  .about .location__logo img {
-    width: 50%; }
-  .about .emma img {
-    margin-left: -30px; }
-  .about .location__content {
-    padding: 0 3em; }
-  .about .location__responsibilities {
-    text-align: left; }
-    .about .location__responsibilities li {
-      margin: 10px 0; }
-    .about .location__responsibilities .sh-link a {
-      color: #006b81 !important;
-      text-decoration: none;
-      font-family: "Montserrat", Helvetica, Arial, sans-serif;
-      font-weight: bold; }
-    .about .location__responsibilities .sh-link a:hover {
-      color: #f26a21 !important; }
-    .about .location__responsibilities .sh-hide a:after {
-      content: "\f05a";
-      font-family: fontawesome;
-      margin-left: 10px;
-      color: #f26a21; }
-    .about .location__responsibilities .sh-show a:after {
-      content: "\f00d";
-      font-family: fontawesome;
-      margin-left: 10px;
-      color: #f26a21; }
-  .about .tools li {
-    display: block; }
+.about .location__logo img {
+  width: 50%; }
+.about .emma img {
+  margin-left: -30px; }
+.about .location__content {
+  padding: 0 3em; }
+.about .location__responsibilities {
+  text-align: left; }
+  .about .location__responsibilities li {
+    margin: 10px 0; }
+  .about .location__responsibilities .sh-link a {
+    color: #006b81 !important;
+    text-decoration: none;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: bold; }
+  .about .location__responsibilities .sh-link a:hover {
+    color: #f26a21 !important; }
+  .about .location__responsibilities .sh-hide a:after {
+    content: "\f05a";
+    font-family: fontawesome;
+    margin-left: 10px;
+    color: #f26a21; }
+  .about .location__responsibilities .sh-show a:after {
+    content: "\f00d";
+    font-family: fontawesome;
+    margin-left: 10px;
+    color: #f26a21; }
+.about .tools li {
+  display: block; }
 
 /*********************
 HEADER STYLES
@@ -645,14 +634,7 @@ be seen on the Desktop.
   width: 1040px; }
 
 .welcome {
-  background-color: #1e2327;
-  float: left;
-  width: 100%;
-  background-image: url("../images/about-me.jpg");
-  height: 420px;
-  background-position-x: -80px;
-  background-repeat: no-repeat;
-  color: #ffffff; }
+  background-position-x: -80px; }
   .welcome .last-col {
     padding-top: 130px;
     padding-right: 100px !important;
