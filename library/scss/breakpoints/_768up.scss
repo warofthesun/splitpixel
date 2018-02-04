@@ -18,9 +18,7 @@ GENERAL STYLES
 *********************/
 
 .intro {
-	text-align: center;
-	font-family: $serif;
-	color: #a8dcd8;
+
 	font-size: 60px;
 	line-height: 60px;
 	padding-bottom: 50px;
@@ -28,18 +26,7 @@ GENERAL STYLES
 
 .largetext {
 	font-family: $sans-serif;
-	text-shadow:	1px 1px 0 #ccc,
-					2px 2px 0 #c9c9c9,
-					3px 3px 0 #bbb,
-					6px 6px 1px rgba(0,0,0,.1),
-					0px 0 5px rgba(0,0,0,.1),
-					1px 1px 3px rgba(0,0,0,.3),
-					2px 3px 5px rgba(0,0,0,.2),
-					3px 5px 10px rgba(0,0,0,.25),
-					4px 10px 10px rgba(0,0,0,.2),
-					5px 20px 20px rgba(0,0,0,.15);
 	text-transform: uppercase;
-	color: $white;
 	font-weight: bold;
 }
 
@@ -205,7 +192,7 @@ HEADER STYLES
 	margin: 0;
 	float: left;
 	a {
-		color: $white;
+		
 	}
 }
 
@@ -240,7 +227,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: $white;
+				color: $action;
 				text-decoration: underline;
 			}
 		}

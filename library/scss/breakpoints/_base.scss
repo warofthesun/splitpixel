@@ -90,7 +90,7 @@ div.pp_default .pp_social {
 	.-item {
 		.title {
 			font-family: $sans-serif;
-			color: $border;
+			color: darken($border, 20%);
 		}
 	}
 
@@ -194,22 +194,22 @@ body {
 	font-size: 150%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $primary-lite;
+	background-color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006b81+0,a8dcd9+100 */
-	background: rgb(0,107,129); /* Old browsers */
-	background: -moz-linear-gradient(-45deg, rgba(0,107,129,1) 0%, rgba(168,220,217,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(0,107,129,1) 0%,rgba(168,220,217,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, rgba(0,107,129,1) 0%,rgba(168,220,217,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006b81', endColorstr='#a8dcd9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	// background: rgb(0,107,129); /* Old browsers */
+	// background: -moz-linear-gradient(-45deg, rgba(0,107,129,1) 0%, rgba(168,220,217,1) 100%); /* FF3.6-15 */
+	// background: -webkit-linear-gradient(-45deg, rgba(0,107,129,1) 0%,rgba(168,220,217,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(135deg, rgba(0,107,129,1) 0%,rgba(168,220,217,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006b81', endColorstr='#a8dcd9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
 
 .intro {
 	text-align: center;
 	font-family: $serif;
-	color: #a8dcd8;
+	color: #bfbfbf;
 	font-size: 45px;
 	line-height: 55px;
 	padding-bottom: 50px;
@@ -217,9 +217,9 @@ body {
 
 .largetext {
 	font-family: $sans-serif;
-	text-shadow:	1px 1px 0 #ccc,
-					2px 2px 0 #c9c9c9,
-					3px 3px 0 #bbb,
+	text-shadow:	1px 1px 0 darken($primary-lite, 20%),
+					2px 2px 0 darken($primary-lite, 25%),
+					3px 3px 0 darken($primary-lite, 35%),
 					6px 6px 1px rgba(0,0,0,.1),
 					0px 0 5px rgba(0,0,0,.1),
 					1px 1px 3px rgba(0,0,0,.3),
@@ -228,7 +228,7 @@ body {
 					4px 10px 10px rgba(0,0,0,.2),
 					5px 20px 20px rgba(0,0,0,.15);
 	text-transform: uppercase;
-	color: $white;
+	color: darken($primary-lite, 15%);
 	font-weight: bold;
 }
 
@@ -512,7 +512,7 @@ HEADER STYLES
 	margin: 0;
 	text-align: center;
 	a {
-		color: $white;
+		color: $border;
 	}
 }
 
@@ -560,7 +560,7 @@ and more scalable.
 		margin: 0;
 		a {
 			display: block;
-			color: $white;
+			color: $action;
 			text-decoration: none;
 
 			font-family: $sans-serif;
@@ -716,6 +716,7 @@ POSTS & CONTENT STYLES
 				border-top: 2px solid #d1d3d4;
 				border-bottom: 2px solid #d1d3d4;
 				margin:0;
+				background-image: url("https://www.transparenttextures.com/patterns/debut-light.png");
 			}
 		}
 		.entry-content {

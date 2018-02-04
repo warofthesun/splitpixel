@@ -199,6 +199,7 @@ I've edited it a bit, but it's a nice starting point.
   src: url("../fonts/splitpixel.eot?#iefix") format("embedded-opentype"), url("../fonts/splitpixel.woff") format("woff"), url("../fonts/splitpixel.ttf") format("truetype"), url("../fonts/splitpixel.svg#splitpixel") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 [data-icon]:before {
   font-family: "splitpixel" !important;
   content: attr(data-icon);
@@ -245,13 +246,12 @@ p {
   word-break: break-word;
   word-wrap: break-word;
   -webkit-hyphens: none;
-  -moz-hyphens: none;
-  hyphens: none;
+  -ms-hyphens: none;
+      hyphens: none;
   -webkit-hyphenate-before: 2;
   -webkit-hyphenate-after: 3;
   hyphenate-lines: 3;
   -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
   -ms-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig"; }
@@ -340,19 +340,22 @@ NAVIGATION STYLES
 /* .menu is clearfixed inside mixins.scss */
 .menu {
   /* end .menu ul */ }
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-    .menu ul li {
-      /*
-      plan your menus and drop-downs wisely.
-      */ }
-      .menu ul li a {
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
+
+.menu ul {
+  /* end .menu ul li */
+  /* highlight current page */
+  /* end current highlighters */ }
+
+.menu ul li {
+  /*
+				plan your menus and drop-downs wisely.
+				*/ }
+
+.menu ul li a {
+  /*
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/ }
 
 /* end .menu */
 /*********************
@@ -361,19 +364,22 @@ POSTS & CONTENT STYLES
 /* entry content */
 .entry-content {
   /* at this larger size, we can start to align images */ }
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left; }
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right; }
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    clear: both; }
+
+.entry-content .alignleft, .entry-content img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left; }
+
+.entry-content .alignright, .entry-content img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right; }
+
+.entry-content .aligncenter, .entry-content img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both; }
 
 /* end .entry-content */
 /*********************
@@ -401,18 +407,13 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 .intro {
-  text-align: center;
-  font-family: "Lora", Cambria, Times New Roman, Times, serif;
-  color: #a8dcd8;
   font-size: 60px;
   line-height: 60px;
   padding-bottom: 50px; }
 
 .largetext {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 3px 3px 0 #bbb, 6px 6px 1px rgba(0, 0, 0, 0.1), 0px 0 5px rgba(0, 0, 0, 0.1), 1px 1px 3px rgba(0, 0, 0, 0.3), 2px 3px 5px rgba(0, 0, 0, 0.2), 3px 5px 10px rgba(0, 0, 0, 0.25), 4px 10px 10px rgba(0, 0, 0, 0.2), 5px 20px 20px rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
-  color: #fff;
   font-weight: bold; }
 
 .largetext-alt {
@@ -436,17 +437,19 @@ GENERAL STYLES
 .welcome {
   background-color: #1e2327;
   background-position-x: -150px; }
-  .welcome .last-col {
-    padding-top: 100px;
-    padding-right: 30px !important;
-    padding-left: 0px; }
+
+.welcome .last-col {
+  padding-top: 100px;
+  padding-right: 30px !important;
+  padding-left: 0px; }
 
 .intro__nav {
   text-align: center;
   margin-top: 20px;
   display: inline-block; }
-  .intro__nav .btn {
-    margin: 0 10px; }
+
+.intro__nav .btn {
+  margin: 0 10px; }
 
 /*********************
 LAYOUT & GRID STYLES
@@ -458,40 +461,52 @@ LAYOUT & GRID STYLES
   border-left: 2px solid #d1d3d4;
   margin-left: -20px;
   padding-left: 20px; }
+
 .about .tools li {
   display: block; }
+
 .about .tools li:after {
   content: ""; }
+
 .about .tools__right ul {
   border-left: 0px; }
 
 .about .location__logo img {
   width: 50%; }
+
 .about .emma img {
   margin-left: -30px; }
+
 .about .location__content {
   padding: 0 3em; }
+
 .about .location__responsibilities {
   text-align: left; }
-  .about .location__responsibilities li {
-    margin: 10px 0; }
-  .about .location__responsibilities .sh-link a {
-    color: #006b81 !important;
-    text-decoration: none;
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
-    font-weight: bold; }
-  .about .location__responsibilities .sh-link a:hover {
-    color: #f26a21 !important; }
-  .about .location__responsibilities .sh-hide a:after {
-    content: "\f05a";
-    font-family: fontawesome;
-    margin-left: 10px;
-    color: #f26a21; }
-  .about .location__responsibilities .sh-show a:after {
-    content: "\f00d";
-    font-family: fontawesome;
-    margin-left: 10px;
-    color: #f26a21; }
+
+.about .location__responsibilities li {
+  margin: 10px 0; }
+
+.about .location__responsibilities .sh-link a {
+  color: #006b81 !important;
+  text-decoration: none;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+
+.about .location__responsibilities .sh-link a:hover {
+  color: #f26a21 !important; }
+
+.about .location__responsibilities .sh-hide a:after {
+  content: "\f05a";
+  font-family: fontawesome;
+  margin-left: 10px;
+  color: #f26a21; }
+
+.about .location__responsibilities .sh-show a:after {
+  content: "\f00d";
+  font-family: fontawesome;
+  margin-left: 10px;
+  color: #f26a21; }
+
 .about .tools li {
   display: block; }
 
@@ -501,8 +516,6 @@ HEADER STYLES
 #logo {
   margin: 0;
   float: left; }
-  #logo a {
-    color: #fff; }
 
 #logo h1, #logo.h1 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
@@ -519,58 +532,68 @@ NAVIGATION STYLES
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav ul {
-    background: #333333;
-    margin-top: 0; }
-  .nav li {
-    float: left;
-    position: relative;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */ }
-    .nav li a {
-      border-bottom: 0;
-      /*
-      you can use hover styles here even though this size
-      has the possibility of being a mobile device.
-      */ }
-      .nav li a:hover, .nav li a:focus {
-        color: #fff;
-        text-decoration: underline; }
-    .nav li ul.sub-menu,
-    .nav li ul.children {
-      margin-top: 0;
-      border: 1px solid #ccc;
-      border-top: 0;
-      position: absolute;
-      visibility: hidden;
-      z-index: 8999;
-      /* highlight sub-menu current page */ }
-      .nav li ul.sub-menu li,
-      .nav li ul.children li {
-        /*
-        if you need to go deeper, go nuts
-        just remember deeper menus suck
-        for usability. k, bai.
-        */ }
-        .nav li ul.sub-menu li a,
-        .nav li ul.children li a {
-          padding-left: 10px;
-          border-right: 0;
-          display: block;
-          width: 180px;
-          border-bottom: 1px solid #ccc; }
-        .nav li ul.sub-menu li:last-child a,
-        .nav li ul.children li:last-child a {
-          border-bottom: 0; }
-        .nav li ul.sub-menu li ul,
-        .nav li ul.children li ul {
-          top: 0;
-          left: 100%; }
-    .nav li:hover > ul {
-      top: auto;
-      visibility: visible; }
+
+.nav ul {
+  background: #333333;
+  margin-top: 0; }
+
+.nav li {
+  float: left;
+  position: relative;
+  /*
+		plan your menus and drop-downs wisely.
+		*/
+  /* showing sub-menus */ }
+
+.nav li a {
+  border-bottom: 0;
+  /*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/ }
+
+.nav li a:hover, .nav li a:focus {
+  color: #f26a21;
+  text-decoration: underline; }
+
+.nav li ul.sub-menu,
+.nav li ul.children {
+  margin-top: 0;
+  border: 1px solid #ccc;
+  border-top: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 8999;
+  /* highlight sub-menu current page */ }
+
+.nav li ul.sub-menu li,
+.nav li ul.children li {
+  /*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/ }
+
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  padding-left: 10px;
+  border-right: 0;
+  display: block;
+  width: 180px;
+  border-bottom: 1px solid #ccc; }
+
+.nav li ul.sub-menu li:last-child a,
+.nav li ul.children li:last-child a {
+  border-bottom: 0; }
+
+.nav li ul.sub-menu li ul,
+.nav li ul.children li ul {
+  top: 0;
+  left: 100%; }
+
+.nav li:hover > ul {
+  top: auto;
+  visibility: visible; }
 
 /* end .nav */
 /*********************
@@ -586,12 +609,14 @@ SIDEBARS & ASIDES
 .widget {
   padding: 0 10px;
   margin: 2.2em 0; }
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */ }
-    .widget ul li ul {
-      margin-top: 0.75em;
-      padding-left: 1em; }
+
+.widget ul li {
+  margin-bottom: 0.75em;
+  /* deep nesting */ }
+
+.widget ul li ul {
+  margin-top: 0.75em;
+  padding-left: 1em; }
 
 /* links widget */
 /* meta widget */
@@ -614,10 +639,10 @@ mobile. Make sure to double check these!
 */
 .footer-links ul li {
   /*
-  be careful with the depth of your menus.
-  it's very rare to have multi-depth menus in
-  the footer.
-  */ }
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/ }
 
 /* end .footer-links */
 /******************************************************************
@@ -635,10 +660,11 @@ be seen on the Desktop.
 
 .welcome {
   background-position-x: -80px; }
-  .welcome .last-col {
-    padding-top: 130px;
-    padding-right: 100px !important;
-    padding-left: 0px; }
+
+.welcome .last-col {
+  padding-top: 130px;
+  padding-right: 100px !important;
+  padding-left: 0px; }
 
 .greeting {
   font-size: 33px; }
@@ -666,5 +692,3 @@ header.php file to see what they are:
 .lt-ie8 .class { ... }
 
 */
-
-/*# sourceMappingURL=ie.css.map */

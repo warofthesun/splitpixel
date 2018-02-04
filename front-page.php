@@ -23,8 +23,6 @@
 
 						<main id="main" class="m-all t-3of3 d-7of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-
-
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
 								<div style="clear:both"></div>
@@ -54,48 +52,37 @@
 										</div>
 									</div>
 								</div>
-								<div style="clear:both" id="work"></div>
-								<div class="entry-content cf">
-									<?php the_content(); ?>
-								</div>
-								<div style="clear:both"></div>
-								<div class="cheers" id="cheers">
-									<div class="d-1of4">&nbsp;</div>
-									<div class="d-1of2">
-									<?php the_field('cheers'); ?>
-									</div>
-									<div class="d-1of4">&nbsp;</div>
-								</div>
+
+
 
 							</article>
-
-							<?php endwhile; ?>
-
-									<?php bones_page_navi(); ?>
-
-							<?php else : ?>
-
-									<article id="post-not-found" class="hentry cf">
-											<header class="article-header">
-												<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-											<section class="entry-content">
-												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the index.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
-
-							<?php endif; ?>
 
 
 						</main>
 
-
-
 				</div>
+				<div class="entry-content">
+					<div style="clear:both" id="work"></div>
+					<div class="cf wrap">
+						<?php the_content(); ?>
+					</div>
+				</div>
+				<div class="wrap">
+					<div style="clear:both"></div>
+					<div class="cheers" id="cheers">
+						<div class="d-1of4">&nbsp;</div>
+						<div class="d-1of2">
+						<?php the_field('cheers'); ?>
+						</div>
+						<div class="d-1of4">&nbsp;</div>
+					</div>
+				</div>
+			<?php endwhile; ?>
 
+			<?php else : ?>
+
+
+			<?php endif; ?>
 			</div>
 
 

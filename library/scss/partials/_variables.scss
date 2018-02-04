@@ -32,6 +32,10 @@ $meta-gray:         #9fa6b4;
 
 $primary: #006b81;
 $primary-lite: #a8dcd8;
+
+$primary-lite-1: darken($primary-lite, 10%);
+$primary-lite-2: darken($primary-lite, 20%);
+$primary-lite-3: darken($primary-lite, 30%);
 $border:       #d1d3d4;
 $action: #f26a21;
 $action-lite: lighten($action, 20%);
