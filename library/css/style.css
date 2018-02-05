@@ -1557,6 +1557,7 @@ body {
   line-height: 1.5;
   color: #black;
   background-color: #fff;
+  background-image: url(../images/body-back.png);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006b81+0,a8dcd9+100 */ }
@@ -1626,7 +1627,7 @@ body {
   display: inline-block; }
 
 .about {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   float: left;
   padding: 1.5em; }
 
@@ -1920,11 +1921,11 @@ POSTS & CONTENT STYLES
 /* entry content */
 .front-page .entry-content {
   padding: 0;
-  background-color: #f1f2f2;
+  background-color: #fff;
   border-top: 2px solid #d1d3d4;
   border-bottom: 2px solid #d1d3d4;
   margin: 0;
-  background-image: url("https://www.transparenttextures.com/patterns/debut-light.png"); }
+  background-image: url("../images/about-back.png"); }
 
 .entry-content {
   padding: 1em;
