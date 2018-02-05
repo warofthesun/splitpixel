@@ -1,5 +1,5 @@
 <!--SINGLE-->
-<?php get_header('archive'); ?>
+<?php get_header('single'); ?>
 
 			<div id="content">
 
